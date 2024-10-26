@@ -13,19 +13,28 @@ public static void main(String[] args) {
 	//2. create an array of 5 robots.
 	Robot[] robots = new Robot[5];
 	//3. use a for loop to initialize the robots.
+	Random rand = new Random();
     for(int i = 0; i<robots.length;i++) {
     	robots[i] = new Robot();
-    	robots[i].setX(100);
-    	robots[i].setY(100);
+    	robots[i].setX(100 + 50*i);
+    	robots[i].setY(400);
     	robots[i].setPenWidth(100);
     }
 		//4. make each robot start at the bottom of the screen, side by side, facing up
-    ;
-	//5. use another for loop to iterate through the array and make each robot move 
-    	Random rand = new Random();
-    	for(int i = 0; robots[i].move(); i++) {
-    		i = rand.nextInt(49);
+    	
+	//5. use another for loop to iterate through the array and make each robot move
+    boolean unfinished = true;
+    while(unfinished) {  	
+    	for(int i = 0; i<robots.length;i++) {
+    	robots[i].move(rand.nextInt(50));
+    	if (robots[i].getY() < 0) {
+    		unfinished = false;
     	}
+    		
+    		
+    	}
+    }
+    System.out.println("The robot has won!");
 	//   a random amount less than 50.
 
 	//6. use a while loop to repeat step 5 until a robot has reached the top of the screen.
