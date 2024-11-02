@@ -20,7 +20,7 @@ public class _02_FindTheHiddenButton implements ActionListener{
 	JPanel panel;
 	
 	//1. create an array of JButtons. Don't initialize it yet.
-	JButton[] = JButtons
+	
 	//2 create an int variable called hiddenButton
 	
 	public static void main(String[] args) {
@@ -44,7 +44,7 @@ public class _02_FindTheHiddenButton implements ActionListener{
 			//8. add each JButton to the panel
 		
 		//9 add the panel to the window
-		
+		panel += window;
 		//10. call setExtendedState(JFrame.MAXIMIZED_BOTH) on your JFrame object.
 		
 		//11. set the JFrame to visible.

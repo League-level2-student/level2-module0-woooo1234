@@ -8,7 +8,7 @@ import processing.core.PImage;
  * In this class:
  * 1. Declare a PImage array variable as a member variable in this class.
  *    DO NOT initialize it.
- * 
+ * 	  
  * 2. In the initializePaintings() method, initialize the PImage array to
  *    contain 4 images.
  * 
@@ -45,7 +45,7 @@ import processing.core.PImage;
  * 11.EXTRA: Find more paintings and add them to your code.
  *           Watercolor paintings work the best!
  */
-
+	
 public class _03_VanGogh extends PApplet {
     PImage canvas;
     PImage paintbrushCursor;
@@ -57,7 +57,7 @@ public class _03_VanGogh extends PApplet {
     Brush brush;
     
     void initializePaintings() {
-        
+    	PImage
     }
     
     void selectNextPainting() {
